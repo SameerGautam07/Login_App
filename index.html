@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <h1>Welcome to Unstop</h1>
+        <h2>Login</h2>
+        <div class="social-login">
+            <button id="google-login">
+                <i class="fab fa-google"></i> Login with Google
+            </button>
+            <button id="facebook-login">
+                <i class="fab fa-facebook-f"></i> Login with Facebook
+            </button>
+        </div>
+        <form id="login-form">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+                <span class="error" id="username-error"></span>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email (optional)">
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="error" id="password-error"></span>
+            </div>
+            <div class="remember-me">
+                <label>
+                    <input type="checkbox" id="remember-me"> Remember Me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <p class="register-link">Don't have an account? <a href="#">Register</a></p>
+        </form>
+    </div>
+
+    <div class="container postcard" id="main-container" style="display: none;">
+        <div class="profile-header">
+            <img src="Images/h_920--w_680--c_thumb-shaanloi263083image3240510123752_240510123852.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="profile-info">
+                <h1 id="welcome-message">Welcome, [Username]!</h1>
+                <p>Glad to see you back!</p>
+            </div>
+        </div>
+        <button id="logout-button">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
